@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>View ALl Items </title>
+  <link rel="stylesheet"  th:href="@{~/css/tablestyle.css}">
+  <link rel="shortcut icon" type="image/png" th:href="@{~/assets/img/logo.png}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet"  th:href="@{~/css/style.min.css}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    .edit{
+      background-color: #5041BC;
+      border-radius:20px ;
+      padding-top:7px ;
+      padding-bottom:7px ;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div th:replace="AdminFrag/AdminNavigation.html :: navigation"></div>
+
+<div class="Main-wrapper" style="margin-left: 17%">
+  <div style="overflow-x:scroll;">
+  <table>
+    <thead>
+    <tr>
+      <th>Contact ID</th>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Subject</th>
+      <th>Message</th>
+      <th>Account_holder</th>
+      <th>Delete</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="contact:${allcontact}">
+      <td th:text="${contact.id}"></td>
+      <td th:text="${contact.fullname}"></td>
+      <td th:text="${contact.email}"></td>
+      <td th:text="${contact.subject}"></td>
+      <td th:text="${contact.message}"></td>
+      <td th:text="${contact.getUser_id().getFullname()}"></td>
+      <td> <a class="edit" th:href="@{~/admin/deletecontact/}+${contact.id}" >Delete</a></td>
+
+    </tr>
+    </tbody>
+
+  </table>
+
+</div>
+</div>
+
+<script th:src="@{~/plugins/bower_components/jquery/dist/jquery.min.js}"></script>
+<script th:src="@{~/dist/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{~/js/app-style-switcher.js}"></script>
+<script th:src="@{~/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js}"></script>
+<script th:src="@{~/js/waves.js}"></script>
+<script th:src="@{~/js/sidebarmenu.js}"></script>
+<script th:src="@{~/js/custom.js}"></script>
+
+</body>
+</html>

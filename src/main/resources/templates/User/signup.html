@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="shortcut icon" type="image/png" th:href="@{~/assets/img/logo.png}">
+
+  <link rel="stylesheet" th:href="@{~/css/signupcss.css}">
+
+  <script src="https://kit.fontawesome.com/b0f0ee728d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="login-form">
+    
+   
+    <div class="left-section">
+      
+      <!-- <img src="\fruit.jpg" alt=""> -->
+      <h2>
+        <span>sign </span>up
+      </h2>
+
+      <form   th:method="post" th:action="@{/user/saveuser}" th:object="${user}">
+
+      <div class="formGroup">
+        <input type="text" placeholder="FullName" required th:field="*{fullname}" >
+      </div>
+
+      <div class="formGroup">
+        <input type="email" id="email" placeholder="Email" required th:field="*{email}" >
+      </div>
+
+      <div class="formGroup">
+        <input type="text" placeholder="Phone No." required th:field="*{mobile_no}">
+      </div>
+
+      <div class="formGroup">
+        <input type="text"  placeholder="Address" required th:field="*{address}" >
+      </div>
+
+      <div class="formGroup">
+        <input type="password"  placeholder="Password" required th:field="*{password}">
+      </div>
+
+      <div class="formGroup">
+        <input type="password"  placeholder="Confirm Password" required>
+      </div>
+
+      <button class="submit-btn" type="submit">Submit</button>
+        </form>
+      <p class="ask">
+        Already a member?
+        <a href="login.html">Login</a>
+      </p>
+    </div>
+
+    
+    <div class="right-section">
+      <!-- <img src="\change.jpg" alt=""> -->
+      
+      <a href="" class="facebook-class"> <i class="fa-brands fa-facebook"></i>
+        Connect With Facebook
+      </a>
+
+      <a href="" class="google-class"><i class="fa-brands fa-google"></i>
+        Connect With Google
+      </a>
+    </div>
+   
+  </div>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- title -->
+	<title>About</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" th:href="@{~/assets/img/logo.png}">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+	<link rel="stylesheet"  th:href="@{~/css/owl.carousel.css}">
+	<!-- magnific popup -->
+	<link rel="stylesheet"  th:href="@{~/css/magnific-popup.css}">
+	<!-- animate css -->
+	<link rel="stylesheet"  th:href="@{~/css/animate.css}">
+	<!-- mean menu css -->
+	<link rel="stylesheet"  th:href="@{~/css/meanmenu.min.css}">
+	<!-- main style -->
+	<link rel="stylesheet"  th:href="@{~/css/main.css}">
+	<!-- responsive -->
+	<link rel="stylesheet"  th:href="@{~/css/responsive.css}">
+
+</head>
+<body>
+<div th:replace="UserFrag/UserNavigation.html :: navigation"></div>
+
+<!-- search area -->
+	<div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" placeholder="Keywords">
+							<button type="submit">Search <i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end search arewa -->
+	
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<p>We sale fresh fruits</p>
+						<h1>About Us</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- featured section -->
+	<div class="feature-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="featured-text">
+						<h2 class="pb-3">Why <span class="orange-text">FalFull</span></h2>
+						<div class="row why">
+							<div class="col-lg-6 col-md-6 mb-4 mb-md-5">
+								<div class="list-box d-flex">
+									<div class="list-icon">
+										<i class="fas fa-shipping-fast"></i>
+									</div>
+									<div class="content">
+										<h3>Home Delivery</h3>
+										<p>We do provide Home delivery in Kathmandu Area, whereas nearby location delivery all over nepal.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 mb-5 mb-md-5">
+								<div class="list-box d-flex">
+									<div class="list-icon">
+										<i class="fas fa-money-bill-alt"></i>
+									</div>
+									<div class="content">
+										<h3>Best Price</h3>
+										<p>Providing fresh fruits with affordable/ best price for customers has been our main moto.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 mb-5 mb-md-5">
+								<div class="list-box d-flex">
+									<div class="list-icon">
+										<i class="fas fa-briefcase"></i>
+									</div>
+									<div class="content">
+										<h3>Customer Commitment</h3>
+										<p> We beleive in giving best to our customers,sellers and society.
+
+										</p>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<div class="list-box d-flex">
+									<div class="list-icon">
+										<i class="fas fa-sync-alt"></i>
+									</div>
+									<div class="content">
+										<h3>Quick Refund</h3>
+										<p>We do provide return back policy, so quick refund approach is primarily focused.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end featured section -->
+
+	<!-- shop banner -->
+	<section class="shop-banner">
+    	<div class="container">
+        	<h3>Sasto sale deal is on! <br> with big <span class="orange-text">Discount.</span></h3>
+            <div class="sale-percent"><span>Sale! <br> Upto</span>50% <span>off</span></div>
+            <a href="shop.html" class="cart-btn btn-lg">Shop Now</a>
+        </div>
+    </section>
+	<!-- end shop banner -->
+
+	<!-- team section -->
+	<div class="mt-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">
+						<h3>Our <span class="orange-text">Team</span></h3>
+						<p>As a team, we think, develop, and excel. Work as a team is ideal. Likewise, by working together as a team, we tend to provide better! </p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-item">
+						<div class="team-bg team-bg-1"></div>
+						<h4>Carlos Johnson<span>Fruit Farmer</span></h4>
+						<ul class="social-link-team">
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-item">
+						<div class="team-bg team-bg-2"></div>
+						<h4>Melvin Harris <span>Fruit Distributor</span></h4>
+						<ul class="social-link-team">
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+					<div class="single-team-item">
+						<div class="team-bg team-bg-3"></div>
+						<h4>Jizzy B<span>Account Manager</span></h4>
+						<ul class="social-link-team">
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end team section -->
+
+	<!-- testimonail-section -->
+	<div class="testimonail-section mt-80 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1 text-center">
+					<div class="testimonial-sliders">
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img th:src="@{/assets/img/avaters/avatar1.png}" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>Sean Johnson <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									"We have expanded our local business, courtesy to FalFull. Customers purchase items from Falfull's website, and Falfull obtains goods from our local stores. 
+									This demonstrates the interaction of local businesses and farmers with technology. I wish you all the best for the days to come!""
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img th:src="@{/assets/img/avaters/avatar2.png}"  alt="">
+							</div>
+							<div class="client-meta">
+								<h3>Tim David  <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									"Early on, growing a local firm was challenging.
+									 I would want to thank FalFull for offering online services. Additionally, this has significantly aided the local market's expansion".
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img th:src="@{/assets/img/avaters/avatar3.png}" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>Conor McGregor <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									"People now easily purchase the fruits of their desires thanks to FalFull. Wishing them well for the future."
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end testimonail-section -->
+
+	<!-- logo carousel -->
+	<div class="logo-carousel-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="logo-carousel-inner">
+						<div class="single-logo-item">
+							<img th:src="@{/assets/img/company-logos/1.png}" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img th:src="@{assets/img/company-logos/2.png}" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img th:src="@{assets/img/company-logos/3.png}" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img th:src="@{assets/img/company-logos/4.png}" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img th:src="@{assets/img/company-logos/5.png}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end logo carousel -->
+
+
+<!-- Start Footer -->
+<div th:replace="UserFrag/UserFooter.html :: footer "></div>
+<!-- End Footer -->
+
+
+	<!-- jquery -->
+	<script  th:src="@{~/assets/js/jquery-1.11.3.min.js}"></script>
+	<!-- bootstrap -->
+	<script  th:src="@{~/assets/bootstrap/js/bootstrap.min.js}"></script>
+	<!-- count down -->
+	<script  th:src="@{~/assets/js/jquery.countdown.js}"></script>
+	<!-- isotope -->
+	<script  th:src="@{~/assets/js/jquery.isotope-3.0.6.min.js}"></script>
+	<!-- waypoints -->
+	<script th:src="@{~/assets/js/waypoints.js}"></script>
+	<!-- owl carousel -->
+	<script  th:src="@{~/assets/js/owl.carousel.min.js}"></script>
+	<!-- magnific popup -->
+	<script  th:src="@{~/assets/js/jquery.magnific-popup.min.js}"></script>
+	<!-- mean menu -->
+	<script  th:src="@{~/assets/js/jquery.meanmenu.min.js}"></script>
+	<!-- sticker js -->
+	<script  th:src="@{~/assets/js/sticker.js}"></script>
+	<!-- main js -->
+	<script th:src="@{~/assets/js/main.js}"></script>
+
+
+</body>
+<script>
+	let myPage = "about";
+	let listGroupItem = Array.from(document.getElementsByClassName("list-group-item"));
+	listGroupItem.forEach(i=>{
+		i.classList.remove("active")
+	})
+	let activeID = document.getElementById(myPage);
+	activeID.classList.add("active");
+</script>
+
+</html>
